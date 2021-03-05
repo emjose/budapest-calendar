@@ -472,3 +472,24 @@ input.add-event-edit:-ms-input-placeholder {
   text-transform: uppercase;
   font-family: "Sanchez", serif;
 }
+
+/* Weekdays */
+.cview--spacer,
+.cview__header {
+  width: 14.28571428571429%;
+  max-width: 14.28571428571429%;
+  padding: 18px;
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: clip;
+  font-size: 1.75em;
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  color: #fa798f;
+  /* font-family: "Avenir", sans-serif; */
+}
