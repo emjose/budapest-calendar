@@ -415,3 +415,38 @@ input.add-event-edit:-ms-input-placeholder {
 .cview__month-next {
   color: #e0919ed8;
 }
+
+.cview__month-last,
+.cview__month-next,
+.cview__month-current {
+  width: 33.33333%;
+  text-align: center;
+  font-size: 22px;
+  cursor: pointer;
+  /* color: #222; */
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+
+  margin-bottom: 20px;
+}
+.cview__month-last:hover,
+.cview__month-next:hover {
+  color: #fff;
+}
+
+.cview__month-current {
+  top: 7%;
+  font-size: 2.3em;
+  cursor: default;
+  animation: popIn 200ms 1 forwards;
+  transform: translateY(-10px);
+  opacity: 0;
+  position: relative;
+}
+.cview__month-reset {
+  animation: none;
+}
+.cview__month-activate {
+  animation: popIn 500ms 1 forwards;
+}
