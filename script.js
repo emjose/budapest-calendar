@@ -140,10 +140,10 @@ CalendarApp.prototype.showView = function(date){
   this.calendarMonthDiv.setAttribute("data-date", now);
 
   
-  this.calendarMonthLastDiv.textContent = "◀ " + this.months[lastM.getMonth()];
+  this.calendarMonthLastDiv.textContent = "← " + this.months[lastM.getMonth()];
   this.calendarMonthLastDiv.setAttribute("data-date", lastM);
   
-  this.calendarMonthNextDiv.textContent = this.months[nextM.getMonth()] + " ▶";
+  this.calendarMonthNextDiv.textContent = this.months[nextM.getMonth()] + " →";
   this.calendarMonthNextDiv.setAttribute("data-date", nextM);
   
 }
