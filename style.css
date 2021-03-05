@@ -260,3 +260,31 @@ input.add-event-edit:-ms-input-placeholder {
   letter-spacing: 0.75px;
   text-transform: uppercase;
 }
+
+#add-event {
+  color: #f8879a;
+  border-color: #f8879a;
+  outline: none;
+}
+
+#add-event:hover {
+  color: #8d7a8b;
+  border-color: #04b6e2;
+  outline: none;
+}
+
+/* "X Key" */
+.day-view-exit {
+  position: absolute;
+  top: 20px;
+  line-height: 1em;
+  right: 22px;
+  font-size: 24px;
+  color: rgb(170, 167, 167);
+  font-family: "Avenir", sans-serif;
+  font-weight: 800;
+  cursor: pointer;
+  opacity: 0;
+  animation: popIn 200ms 1 forwards;
+  text-transform: uppercase;
+}
