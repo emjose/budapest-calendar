@@ -51,3 +51,47 @@ body {
   background: url("https://res.cloudinary.com/dn1e07eul/image/upload/v1614897774/100%20Days%20Of%20Code/gbudapest_cnwup2.jpg")
     no-repeat center center/cover;
 }
+
+.calendar {
+  color: #f8f3ec;
+
+  margin: 10px auto;
+  /* background: #f6aa1c; */
+  background: #f7bec6;
+  padding: 60px 40px 80px 40px;
+  width: 95%;
+  max-width: 750px;
+  height: 540px;
+  border-radius: 5px;
+  box-shadow: inset rgba(85, 50, 50, 0.75) -1px -2px 2px,
+    inset rgba(255, 255, 255) 3px 3px 3px,
+    rgba(99, 54, 54, 0.75) 2px 2px 3px -1px;
+  transition: all 0.2s ease;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -ms-border-radius: 3px;
+  position: relative;
+}
+
+.calendar__title {
+  text-align: center;
+}
+
+.calendar--day-view {
+  position: absolute;
+  border-radius: 5px;
+  top: 5%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+  background: rgba(255, 255, 255, 1);
+  box-shadow: 10px 12px 10px rgba(2, 2, 2, 0.16);
+  z-index: 2;
+  overflow: hidden;
+  transform: scale(0.5) translate(0px, 100px);
+  opacity: 0;
+  visibility: hidden;
+  display: none;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
