@@ -172,3 +172,30 @@ body {
 .add-event-edit--long {
   max-width: 80%;
 }
+
+/* Input lines under the placeholders */
+input.add-event-edit {
+  border: none;
+  border-bottom: 1.5px solid #fff;
+  background: transparent;
+  outline: none;
+  font: inherit;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 800;
+}
+.add-event-edit--error,
+input.add-event-edit--error {
+  border-color: #ee666b;
+  animation: shake 300ms 1 forwards;
+}
+@keyframes shake {
+  20%,
+  60% {
+    transform: translateX(4px);
+  }
+  40%,
+  80% {
+    transform: translateX(-4px);
+  }
+}
