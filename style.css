@@ -229,3 +229,34 @@ input.add-event-edit:-ms-input-placeholder {
   margin: 15px 5px;
   text-align: center;
 }
+
+.event-btn--save {
+  /* border-color: #fff; */
+  background: #fff0f0;
+  color: #af7982;
+  border-radius: 5px;
+  border-color: transparent;
+  outline: none;
+}
+.event-btn--save:hover {
+  box-shadow: 2px 2px 6px rgba(2, 2, 2, 0.2);
+}
+.event-btn--cancel {
+  background: #eb6f73;
+  border-radius: 5px;
+  color: #fff;
+  border-color: transparent;
+  outline: none;
+}
+.event-btn--cancel:hover {
+  box-shadow: 2px 2px 6px rgba(2, 2, 2, 0.2);
+}
+
+/* Add a new event? */
+.day-highlight .day-events-link {
+  /* border-bottom: 2px solid #222; */
+  padding: 0;
+  cursor: pointer;
+  letter-spacing: 0.75px;
+  text-transform: uppercase;
+}
