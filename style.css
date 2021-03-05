@@ -580,3 +580,119 @@ input.add-event-edit:-ms-input-placeholder {
 .footer__link:hover {
   color: #fa798f;
 }
+
+/* @media (min-width: 800px) */
+/* @media screen and (max-width: 1000px) */
+
+@media (max-width: 800px) {
+  /* .calendar {
+    margin: 15px;
+  } */
+
+  .row {
+    flex-wrap: nowrap;
+  }
+  .row .half {
+    width: 20%;
+  }
+  .row .qtr {
+    width: 25%;
+  }
+
+  .day-inspiration-quote {
+    font-size: 1em;
+    /* visibility: hidden !important; */
+  }
+
+  input.add-event-edit::-webkit-input-placeholder {
+    font-size: 0.7em;
+  }
+
+  input.add-event-edit:-moz-placeholder {
+    font-size: 0.7em;
+  }
+
+  input.add-event-edit::-moz-placeholder {
+    font-size: 0.7em;
+  }
+
+  input.add-event-edit:-ms-input-placeholder {
+    font-size: 0.7em;
+  }
+
+  .day-view-date {
+    top: 22px;
+    font-size: 1em;
+    letter-spacing: 1px;
+  }
+
+  .event-btn {
+    padding: 3px 2px;
+    /* border: 3px solid #fff; */
+    /* color: #fff; */
+    cursor: pointer;
+    display: inline-block;
+    width: 65px;
+    margin: 17px -12px;
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .footer {
+    width: 100%;
+    bottom: 22px;
+    font-size: 1.25em;
+  }
+
+  .cview--spacer,
+  .cview__header,
+  .cview--date {
+    width: 14.28571428571429%;
+    max-width: 14.28571428571429%;
+
+    padding: 14px;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: clip;
+    font-size: 0.95em;
+    font-weight: 500;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+  }
+
+  .cview--spacer,
+  .cview__header {
+    width: 14.28571428571429%;
+    max-width: 14.28571428571429%;
+
+    padding: 14px;
+    box-sizing: border-box;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: clip;
+    font-size: 0.75em;
+    font-weight: 500;
+    letter-spacing: 1.25px;
+    text-transform: uppercase;
+  }
+
+  .cview--date.today {
+    font-size: 0.85em;
+    font-weight: 500;
+    letter-spacing: 1.25px;
+    align-items: center;
+  }
+
+  .cview__month-current {
+    /* top: -10%; */
+    font-size: 1em;
+  }
+
+  .cview__month-last,
+  .cview__month-next {
+    font-size: 0.75em;
+  }
+}
