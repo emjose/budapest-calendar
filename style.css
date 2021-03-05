@@ -350,3 +350,68 @@ input.add-event-edit:-ms-input-placeholder {
 #calendar-month {
   color: #f8f3ec;
 }
+
+/* "time to time" */
+.event-dates {
+  font-family: futura-pt, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  color: #fc8d9b;
+  font-size: 22px;
+  text-transform: lowercase;
+  /*   position: relative; */
+}
+
+.event-delete {
+  position: absolute;
+  right: 10px;
+  top: 18px;
+  font-size: 14px;
+  letter-spacing: 0.75px;
+  color: #f25656;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.event-name {
+  font-size: 22px;
+  font-family: "Avenir", sans-serif;
+  color: rgb(83, 83, 83);
+  padding: 10px;
+  letter-spacing: 0.75px;
+  background: #f7f7f7;
+  margin: 2px 0;
+  display: block;
+  text-transform: initial;
+}
+.calendar--day-view-active {
+  animation: popIn 200ms 1 forwards;
+  visibility: visible;
+  display: flex;
+  transition: visibility 0ms;
+}
+.calendar--view {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+.cview__month {
+  width: 100%;
+  text-align: center;
+  font-weight: 800;
+  font-size: 22px;
+  font-family: "Avenir", sans-serif;
+  padding-bottom: 20px;
+  color: #222;
+  text-transform: uppercase;
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+.cview__month-last,
+.cview__month-next {
+  color: #e0919ed8;
+}
