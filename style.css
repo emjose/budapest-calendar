@@ -95,3 +95,41 @@ body {
   align-items: flex-start;
   flex-wrap: wrap;
 }
+
+.day-view-content {
+  color: #222;
+  width: 100%;
+  padding-top: 55px;
+}
+
+/* Individual Day with left header */
+.day-highlight,
+.day-add-event {
+  padding: 8px 10px;
+  margin: 12px 15px;
+  border-radius: 4px;
+  background: #f7dde159;
+  color: rgb(170, 167, 167);
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 0.65px;
+  /* font-family: "Avenir", sans-serif; */
+  font-family: futura-pt, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+}
+
+/* start time and end time columns, default 100% width */
+.row {
+  width: 115%;
+
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.row .qtr {
+  width: 40%;
+}
+.row .half {
+  width: 100%;
+}
