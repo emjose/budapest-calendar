@@ -450,3 +450,25 @@ input.add-event-edit:-ms-input-placeholder {
 .cview__month-activate {
   animation: popIn 500ms 1 forwards;
 }
+
+/* Date Cells */
+
+/* width: 14.28571428571429%;
+  max-width: 14.28571428571429%; */
+
+.cview--date {
+  width: 14.28571428571429%;
+  max-width: 14.28571428571429%;
+
+  padding: 18px;
+  box-sizing: border-box;
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: clip;
+  font-size: 1.35em;
+  font-weight: 900;
+  letter-spacing: 1.25px;
+  text-transform: uppercase;
+  font-family: "Sanchez", serif;
+}
