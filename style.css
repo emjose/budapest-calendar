@@ -493,3 +493,35 @@ input.add-event-edit:-ms-input-placeholder {
   color: #fa798f;
   /* font-family: "Avenir", sans-serif; */
 }
+
+/* month days / month dates */
+.cview--date {
+  font-size: 1.5em;
+  font-weight: 400;
+  cursor: pointer;
+}
+.has-events::after {
+  border-radius: 100%;
+  animation: popIn 200ms 1 forwards;
+  background: rgba(255, 255, 255, 0.95);
+  transform: scale(0);
+  content: "";
+  display: block;
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  top: 8px;
+  left: 30%;
+}
+.cview--date:hover::before {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* current day / current date */
+.cview--date.today {
+  color: #fa798f;
+  transform: scale(1.2);
+  font-size: 1.5em;
+  font-weight: 500;
+  align-items: center;
+}
