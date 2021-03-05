@@ -34,3 +34,20 @@ font-family: "Sanchez", serif;
 /* font-family: "HelveticaNeue-Light", Helvetica Neue, Helvetica; */
 
 /* font-family: "Avenir", sans-serif; */
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: futura-pt, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  /* font-style: bold; */
+  display: flex;
+  align-items: center;
+  height: 100%;
+  height: 100vh;
+  min-height: 500px;
+
+  background: url("https://res.cloudinary.com/dn1e07eul/image/upload/v1614897774/100%20Days%20Of%20Code/gbudapest_cnwup2.jpg")
+    no-repeat center center/cover;
+}
