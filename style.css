@@ -326,3 +326,27 @@ input.add-event-edit:-ms-input-placeholder {
   font-style: normal;
   z-index: -1;
 }
+
+.day-event-list-ul {
+  list-style: none;
+  margin: auto;
+  width: 95%;
+  padding: 0;
+  max-height: 300px;
+  overflow: auto;
+}
+.day-event-list-ul li {
+  padding: 10px;
+  margin: 10px 0;
+  /* background: #04b6e2; */
+  /*   box-shadow: 0px 1px 1px  rgba(2,2,2,0.5); */
+  position: relative;
+}
+.event-dates small {
+  font-size: 0.65em;
+  color: #444;
+}
+
+#calendar-month {
+  color: #f8f3ec;
+}
