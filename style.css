@@ -127,9 +127,48 @@ body {
   flex-wrap: wrap;
   align-items: center;
 }
+
 .row .qtr {
   width: 40%;
 }
+
 .row .half {
   width: 100%;
+}
+
+/* "Pink Day Box" */
+.day-add-event {
+  background: #fdafbc;
+  color: #fff;
+  padding: 16px;
+  display: none;
+  transform: translateY(-205px);
+  opacity: 0;
+}
+.day-add-event[data-active="true"] {
+  display: block;
+  animation: popIn 250ms 1 forwards;
+}
+
+/* Event Name, Start Time, End Time */
+.add-event-label {
+  padding: 10px 0;
+
+  font-family: "Avenir", sans-serif;
+  color: #fff;
+  font-weight: 500;
+  font-size: 12px;
+  color: #70484f;
+}
+.add-event-edit {
+  display: block;
+  margin: 4px 0;
+  max-width: 70%;
+  border-bottom: 2px solid #fff;
+  font-size: 18px;
+  font-weight: 800;
+  color: #fff;
+}
+.add-event-edit--long {
+  max-width: 80%;
 }
