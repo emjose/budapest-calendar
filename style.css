@@ -288,3 +288,41 @@ input.add-event-edit:-ms-input-placeholder {
   animation: popIn 200ms 1 forwards;
   text-transform: uppercase;
 }
+
+/* "day and date left header" */
+.day-view-date {
+  position: absolute;
+  top: 19px;
+  left: 22px;
+  text-transform: uppercase;
+  text-align: right;
+  font-size: 1.5em;
+  letter-spacing: 1px;
+  font-family: "Avenir", sans-serif;
+  font-weight: 800;
+  color: #fdafbc;
+  /* border-bottom: 2px solid #222; */
+  cursor: pointer;
+}
+.day-inspiration-quote {
+  position: absolute;
+
+  left: 10%;
+  width: 80%;
+  margin-top: -40px;
+  height: calc(100% - 110px);
+
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  font-size: 1.75em;
+
+  font-weight: 800;
+  letter-spacing: 0.25px;
+  color: #fcced6;
+  line-height: 1.5em;
+  font-family: futura-pt, sans-serif;
+  font-weight: 600;
+  font-style: normal;
+  z-index: -1;
+}
