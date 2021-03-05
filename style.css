@@ -525,3 +525,25 @@ input.add-event-edit:-ms-input-placeholder {
   font-weight: 500;
   align-items: center;
 }
+
+.cview--date.today::before {
+  /* animation: popIn 200ms 1 forwards; */
+  /* background: rgba(255, 255, 255, 0.2); */
+  /* transform: scale(0); */
+}
+@keyframes popIn {
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.cview--date::before {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  content: "";
+  transform: scale(0.8);
+  z-index: 0;
+}
