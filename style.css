@@ -547,3 +547,36 @@ input.add-event-edit:-ms-input-placeholder {
   transform: scale(0.8);
   z-index: 0;
 }
+
+/* Today is */
+
+.footer {
+  width: 100%;
+  bottom: 22px;
+  left: 0;
+  position: absolute;
+  /* font-size: 16px; */
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  font-size: 1.5em;
+  text-align: center;
+
+  font-family: futura-pt, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+
+  color: #f8f3ec;
+}
+
+/* color: #f8f1e7; */
+
+.footer__link {
+  cursor: pointer;
+  padding: 2px 5px;
+  /* border-bottom: 1px solid #fff; */
+}
+
+.footer__link:hover {
+  color: #fa798f;
+}
