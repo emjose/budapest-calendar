@@ -34,7 +34,10 @@
 
 <a href=#100days>![#100DaysOfCode](Assets/inter-100hash.png)</a>  
 
-<a href=#100days>![Under Construction](Assets/lorem-text.png)</a>
+### Day 23: March 5, 2021
+- I gave a Wes Anderson makeover to a <a href="https://codepen.io/ovdojoey/pen/GqRxYQ">calendar CodePen</a> by <a href="https://joeylea.com/">Joey Lea</a>.
+- The calendar is themed after one of my favorite films, <a href="https://www.searchlightpictures.com/thegrandbudapesthotel/">The Grand Budapest Hotel</a>.
+- Events can be added, and it has quotes from Ralph Fiennes' character, Monsieur Gustave.
 
 #
 
@@ -57,7 +60,10 @@ open index.html
 
 <a href="https://emjose.github.io/budapest-calendar/">![Live Site](Assets/inter-live-site.png)</a>  
 
-<a href="https://emjose.github.io/budapest-calendar/">![Under Construction](Assets/lorem-live.png)</a>
+<a href="https://emjose.github.io/budapest-calendar/">![Live Site](Assets/023-budapest-a.gif)</a>
+Users can browse calendar dates and quotes from Ralph Fiennes' character, Monsieur Gustave.
+<a href="https://emjose.github.io/budapest-calendar/">![Live Site](Assets/023-budapest-b.gif)</a>
+Events can be added and deleted.
 
 #
 
@@ -65,7 +71,23 @@ open index.html
 
 <a href=#resources>![Resources](Assets/inter-resources.png)</a>  
 
-<a href=#resources>![Under Construction](Assets/lorem-text.png)</a>
+- #### [Calendar CodePen](https://codepen.io/ovdojoey/pen/GqRxYQ) by [Joey Lea](https://joeylea.com/) 
+  
+- #### [The Grand Budapest Hotel](https://www.searchlightpictures.com/thegrandbudapesthotel/)
+  
+- #### [Image Color Picker](https://imagecolorpicker.com/en)
+
+- #### [The Grand Budapest Hotel image by WallpaperCave](https://wallpapercave.com/the-grand-budapest-hotel-wallpapers)
+
+#
+
+<p id="copyright"><p>
+
+<a href=#copyright>![Copyright](Assets/inter-copyright.png)</a>
+
+- This project is for made for educational purposes only. 
+  
+- The Grand Budapest images and characters are copyright of <a href="https://www.searchlightpictures.com/">Searchlight Pictures</a>. © 20th CENTURY STUDIOS
 
 #
 
