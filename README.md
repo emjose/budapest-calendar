@@ -63,6 +63,7 @@ open index.html
 <a href="https://emjose.github.io/budapest-calendar/">![Live Site](Assets/023-budapest-a.gif)</a>
 Users can browse calendar dates and quotes from Ralph Fiennes' character, Monsieur Gustave.
 <br>
+<br>
 <a href="https://emjose.github.io/budapest-calendar/">![Live Site](Assets/023-budapest-b.gif)</a>
 Events can be added and deleted.
 
