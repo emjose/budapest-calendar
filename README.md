@@ -26,6 +26,7 @@
 - [Installation](#installation) 
 - [Live Site](#live-site)
 - [Resources](#resources)
+- [Copyright](#copyright)
 - [Let's Connect!](#lets-connect) 
 
 #
