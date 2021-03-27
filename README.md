@@ -37,8 +37,10 @@
 
 ### Day 23: March 5, 2021
 - I gave a Wes Anderson makeover to a <a href="https://codepen.io/ovdojoey/pen/GqRxYQ">calendar CodePen</a> by <a href="https://joeylea.com/">Joey Lea</a>.
+  
 - The calendar is themed after one of my favorite films, <a href="https://www.searchlightpictures.com/thegrandbudapesthotel/">The Grand Budapest Hotel</a>.
-- Events can be added, and it has quotes from Ralph Fiennes' character, Monsieur Gustave.
+  
+- Events can be added, and it has <a href="https://www.imdb.com/title/tt2278388/characters/nm0000146">quotes from Monsieur Gustave</a>, portrayed by the actor Ralph Fiennes.
 
 #
 
@@ -79,6 +81,8 @@ Events can be added and deleted.
 - #### [The Grand Budapest Hotel](https://www.searchlightpictures.com/thegrandbudapesthotel/)
   
 - #### [Image Color Picker](https://imagecolorpicker.com/en)
+
+- #### [Monsieur Gustave Quotes](https://www.imdb.com/title/tt2278388/characters/nm0000146)
 
 - #### [The Grand Budapest Hotel image by WallpaperCave](https://wallpapercave.com/the-grand-budapest-hotel-wallpapers)
 
