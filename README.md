@@ -94,7 +94,7 @@ Events can be added and deleted.
 
 - This project is for made for educational purposes only. 
   
-- The Grand Budapest images and characters are copyright of <a href="https://www.searchlightpictures.com/">Searchlight Pictures</a>. © 20th CENTURY STUDIOS
+- The Grand Budapest images and characters are copyright of <a href="https://www.searchlightpictures.com/">Searchlight Pictures</a>. © 20th CENTURY STUDIOS. All Rights Reserved.
 
 #
 
