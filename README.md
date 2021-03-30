@@ -40,7 +40,7 @@
   
 - The calendar is themed after one of my favorite films, <a href="https://www.searchlightpictures.com/thegrandbudapesthotel/">The Grand Budapest Hotel</a>.
   
-- Events can be added, and it has <a href="https://www.imdb.com/title/tt2278388/characters/nm0000146">quotes from Monsieur Gustave</a>, portrayed by the actor Ralph Fiennes.
+- Events can be added, and it has <a href="https://www.imdb.com/title/tt2278388/characters/nm0000146">quotes from Monsieur Gustave</a>, portrayed by the actor <a href="https://www.imdb.com/name/nm0000146/">Ralph Fiennes</a>.
 
 #
 
