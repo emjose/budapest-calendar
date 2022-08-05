@@ -38,7 +38,9 @@
 ### Day 23: March 5, 2021
 
 -   I gave a Wes Anderson makeover to a <a href="https://codepen.io/ovdojoey/pen/GqRxYQ">calendar CodePen</a> by <a href="https://joeylea.com/">Joey Lea</a>.
+
 -   The calendar is themed after one of my favorite films, <a href="https://www.searchlightpictures.com/thegrandbudapesthotel/">The Grand Budapest Hotel</a>.
+
 -   Events can be added, and it has <a href="https://www.imdb.com/title/tt2278388/characters/nm0000146">quotes from Monsieur Gustave</a>, portrayed by the actor <a href="https://www.imdb.com/name/nm0000146/">Ralph Fiennes</a>.
 
 #
@@ -49,13 +51,13 @@
 
 #### Git clone and cd into the repo folder:
 
-```
+```console
 git clone git@github.com:emjose/budapest-calendar.git && cd budapest-calendar
 ```
 
 #### Run the command:
 
-```
+```console
 open index.html
 ```
 
@@ -67,8 +69,11 @@ open index.html
 
 <a href="https://emjose.github.io/budapest-calendar/">![Live Site](Assets/023-budapest-a.gif)</a>
 Users can browse calendar dates and quotes from Ralph Fiennes' character, Monsieur Gustave.
+
+#
+
 <br>
-<br>
+
 <a href="https://emjose.github.io/budapest-calendar/">![Live Site](Assets/023-budapest-b.gif)</a>
 Events can be added and deleted.
 
@@ -95,6 +100,7 @@ Events can be added and deleted.
 <a href=#copyright>![Copyright](https://res.cloudinary.com/dn1e07eul/image/upload/v1659391383/Readme%20Headers/inter-copyright_ax53yz.png)</a>
 
 -   This project is for made for educational purposes only.
+
 -   The Grand Budapest images and characters are copyright of <a href="https://www.searchlightpictures.com/">Searchlight Pictures</a>. © 20th CENTURY STUDIOS. All Rights Reserved.
 
 #
