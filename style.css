@@ -144,6 +144,11 @@ body {
 	width: 100%;
 }
 
+.half button {
+	width: 80px;
+	font-weight: 500;
+}
+
 /* "Pink Day Box" */
 .day-add-event {
 	background: var(--pink-event-box);
