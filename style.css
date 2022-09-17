@@ -36,41 +36,64 @@ font-family: "Sanchez", serif;
 /* font-family: "Avenir", sans-serif; */
 
 :root {
+	--white: #fff;
+	--black: #000;
 	--github-fill: #f7bec6;
 	--github-color: #b77d91;
 	--github-focus: #402a3c;
+	--image: url("https://res.cloudinary.com/dn1e07eul/image/upload/v1614897774/100%20Days%20Of%20Code/gbudapest_cnwup2.jpg")
+		no-repeat center center/cover;
+	--futura: futura-pt, sans-serif;
+	--calendar-background-color: #f7bec6;
+	/* --day-number-color: #f8f3ec; */
+	--day-number-color: #90506f;
+	--calendar-shadow: inset rgba(85, 50, 50, 0.75) -1px -2px 2px, inset rgba(255, 255, 255) 3px 3px 3px,
+		rgba(99, 54, 54, 0.75) 2px 2px 3px -1px;
+	--day-background-color: rgba(255, 255, 255, 1);
+	--day-shadow: 10px 12px 10px rgba(2, 2, 2, 0.16);
+	--day-content-color: #222;
+	--event-banner-color: #f7dde159;
+	--event-banner-text: rgb(137, 137, 137);
+	--pink-event-box: #fdafbc;
+	--event-label-color: #70484f;
+	--placeholder: rgba(255, 255, 255, 0.7);
+	--close-color: rgb(95, 95, 95);
+	/* --current-month-title: #f8f3ec; */
+	--current-month-title: #744b60;
+	/* --day-header-color: #fa798f; */
+	--day-header-color: var(--current-month-title);
+	/* --prev-next-color: #e0919ed8; */
+	--prev-next-color: #8d515b;
+	/* --current-day-color: #fa798f; */
+	--current-day-color: #291316;
 }
 
 body {
 	margin: 0;
 	padding: 0;
-	font-family: futura-pt, sans-serif;
+	font-family: var(--futura);
 	font-weight: 600;
 	font-style: normal;
-	/* font-style: bold; */
 	display: flex;
 	align-items: center;
 	height: 100%;
 	height: 100vh;
 	min-height: 500px;
-
-	background: url("https://res.cloudinary.com/dn1e07eul/image/upload/v1614897774/100%20Days%20Of%20Code/gbudapest_cnwup2.jpg")
-		no-repeat center center/cover;
+	background: var(--image);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }
 
 .calendar {
-	color: #f8f3ec;
-
 	margin: 10px auto;
-	/* background: #f6aa1c; */
-	background: #f7bec6;
+	color: var(--day-number-color);
+	background: var(--calendar-background-color);
 	padding: 60px 40px 80px 40px;
 	width: 95%;
 	max-width: 750px;
 	height: 540px;
 	border-radius: 5px;
-	box-shadow: inset rgba(85, 50, 50, 0.75) -1px -2px 2px, inset rgba(255, 255, 255) 3px 3px 3px,
-		rgba(99, 54, 54, 0.75) 2px 2px 3px -1px;
+	box-shadow: var(--calendar-shadow);
 	transition: all 0.2s ease;
 	-webkit-border-radius: 3px;
 	-moz-border-radius: 3px;
@@ -89,8 +112,8 @@ body {
 	left: 5%;
 	width: 90%;
 	height: 90%;
-	background: rgba(255, 255, 255, 1);
-	box-shadow: 10px 12px 10px rgba(2, 2, 2, 0.16);
+	background: var(--day-background-color);
+	box-shadow: var(--day-shadow);
 	z-index: 2;
 	overflow: hidden;
 	transform: scale(0.5) translate(0px, 100px);
@@ -102,7 +125,7 @@ body {
 }
 
 .day-view-content {
-	color: #222;
+	color: var(--day-content-color);
 	width: 100%;
 	padding-top: 55px;
 }
@@ -113,13 +136,12 @@ body {
 	padding: 8px 10px;
 	margin: 12px 15px;
 	border-radius: 4px;
-	background: #f7dde159;
-	color: rgb(170, 167, 167);
+	background: var(--event-banner-color);
+	color: var(--event-banner-text);
 	font-size: 18px;
 	text-transform: uppercase;
 	letter-spacing: 0.65px;
-	/* font-family: "Avenir", sans-serif; */
-	font-family: futura-pt, sans-serif;
+	font-family: var(--futura);
 	font-weight: 600;
 	font-style: normal;
 }
@@ -127,7 +149,6 @@ body {
 /* start time and end time columns, default 100% width */
 .row {
 	width: 115%;
-
 	display: flex;
 	flex-wrap: wrap;
 	align-items: center;
@@ -143,8 +164,8 @@ body {
 
 /* "Pink Day Box" */
 .day-add-event {
-	background: #fdafbc;
-	color: #fff;
+	background: var(--pink-event-box);
+	color: var(--white);
 	padding: 16px;
 	display: none;
 	transform: translateY(-205px);
@@ -160,19 +181,19 @@ body {
 	padding: 10px 0;
 
 	font-family: "Avenir", sans-serif;
-	color: #fff;
+	color: var(--white);
 	font-weight: 500;
 	font-size: 12px;
-	color: #70484f;
+	color: var(--event-label-color);
 }
 .add-event-edit {
 	display: block;
 	margin: 4px 0;
 	max-width: 70%;
-	border-bottom: 2px solid #fff;
+	border-bottom: 2px solid var(--white);
 	font-size: 18px;
 	font-weight: 800;
-	color: #fff;
+	color: var(--white);
 }
 .add-event-edit--long {
 	max-width: 80%;
@@ -181,11 +202,11 @@ body {
 /* Input lines under the placeholders */
 input.add-event-edit {
 	border: none;
-	border-bottom: 1.5px solid #fff;
+	border-bottom: 1.5px solid var(--white);
 	background: transparent;
 	outline: none;
 	font: inherit;
-	color: #fff;
+	color: var(--white);
 	font-size: 16px;
 	font-weight: 800;
 }
@@ -205,29 +226,17 @@ input.add-event-edit--error {
 	}
 }
 
+input.add-event-edit:-moz-placeholder,
+input.add-event-edit::-moz-placeholder,
+input.add-event-edit:-ms-input-placeholder,
 input.add-event-edit::-webkit-input-placeholder {
-	color: rgba(255, 255, 255, 0.568);
-}
-
-input.add-event-edit:-moz-placeholder {
-	/* Firefox 18- */
-	color: rgba(255, 255, 255, 0.568);
-}
-
-input.add-event-edit::-moz-placeholder {
-	/* Firefox 19+ */
-	color: rgba(255, 255, 255, 0.568);
-}
-
-input.add-event-edit:-ms-input-placeholder {
-	color: rrgba(255, 255, 255, 0.568);
+	color: rgba(255, 255, 255, 0.7);
 }
 
 /* Save and Cancel buttons */
 .event-btn {
 	padding: 3px 9px;
-	/* border: 3px solid #fff; */
-	color: #fff;
+	color: var(--white);
 	cursor: pointer;
 	display: inline-block;
 	width: 65px;
@@ -236,7 +245,6 @@ input.add-event-edit:-ms-input-placeholder {
 }
 
 .event-btn--save {
-	/* border-color: #fff; */
 	background: #fff0f0;
 	color: #af7982;
 	border-radius: 5px;
@@ -249,7 +257,7 @@ input.add-event-edit:-ms-input-placeholder {
 .event-btn--cancel {
 	background: #eb6f73;
 	border-radius: 5px;
-	color: #fff;
+	color: var(--white);
 	border-color: transparent;
 	outline: none;
 }
@@ -285,7 +293,7 @@ input.add-event-edit:-ms-input-placeholder {
 	line-height: 1em;
 	right: 22px;
 	font-size: 24px;
-	color: rgb(170, 167, 167);
+	color: rgb(95, 95, 95);
 	font-family: "Avenir", sans-serif;
 	font-weight: 800;
 	cursor: pointer;
@@ -326,7 +334,7 @@ input.add-event-edit:-ms-input-placeholder {
 	letter-spacing: 0.25px;
 	color: #fcced6;
 	line-height: 1.5em;
-	font-family: futura-pt, sans-serif;
+	font-family: var(--futura);
 	font-weight: 600;
 	font-style: normal;
 	z-index: -1;
@@ -353,18 +361,21 @@ input.add-event-edit:-ms-input-placeholder {
 }
 
 #calendar-month {
-	color: #f8f3ec;
+	color: #744b60;
+}
+
+#calendar-month:hover {
+	color: var(--white);
 }
 
 /* "time to time" */
 .event-dates {
-	font-family: futura-pt, sans-serif;
+	font-family: var(--futura);
 	font-weight: 600;
 	font-style: normal;
 	color: #fc8d9b;
 	font-size: 22px;
 	text-transform: lowercase;
-	/*   position: relative; */
 }
 
 .event-delete {
@@ -418,7 +429,12 @@ input.add-event-edit:-ms-input-placeholder {
 
 .cview__month-last,
 .cview__month-next {
-	color: #e0919ed8;
+	color: var(--prev-next-color);
+}
+
+.cview__month-last:hover,
+.cview__month-next:hover {
+	color: var(--white);
 }
 
 .cview__month-last,
@@ -428,16 +444,10 @@ input.add-event-edit:-ms-input-placeholder {
 	text-align: center;
 	font-size: 22px;
 	cursor: pointer;
-	/* color: #222; */
-	font-family: futura-pt, sans-serif;
+	font-family: var(--futura);
 	font-weight: 700;
 	font-style: normal;
-
 	margin-bottom: 20px;
-}
-.cview__month-last:hover,
-.cview__month-next:hover {
-	color: #fff;
 }
 
 .cview__month-current {
@@ -490,13 +500,12 @@ input.add-event-edit:-ms-input-placeholder {
 	overflow: hidden;
 	text-overflow: clip;
 	font-size: 1.75em;
-	font-family: futura-pt, sans-serif;
+	font-family: var(--futura);
 	font-weight: 700;
 	font-style: normal;
 	letter-spacing: 1.25px;
 	text-transform: uppercase;
-	color: #fa798f;
-	/* font-family: "Avenir", sans-serif; */
+	color: var(--day-header-color);
 }
 
 /* month days / month dates */
@@ -518,24 +527,19 @@ input.add-event-edit:-ms-input-placeholder {
 	top: 8px;
 	left: 30%;
 }
-.cview--date:hover::before {
-	background: rgba(255, 255, 255, 0.2);
+.cview--date:hover {
+	background: rgba(255, 255, 255, 0.454);
 }
 
 /* current day / current date */
 .cview--date.today {
-	color: #fa798f;
+	color: var(--current-day-color);
 	transform: scale(1.2);
 	font-size: 1.5em;
 	font-weight: 500;
 	align-items: center;
 }
 
-.cview--date.today::before {
-	/* animation: popIn 200ms 1 forwards; */
-	/* background: rgba(255, 255, 255, 0.2); */
-	/* transform: scale(0); */
-}
 @keyframes popIn {
 	100% {
 		transform: scale(1);
@@ -554,36 +558,28 @@ input.add-event-edit:-ms-input-placeholder {
 }
 
 /* Today is */
-
 .footer {
 	width: 100%;
 	bottom: 22px;
 	left: 0;
 	position: absolute;
-	/* font-size: 16px; */
 	text-transform: uppercase;
 	letter-spacing: 1px;
-
 	font-size: 1.5em;
 	text-align: center;
-
-	font-family: futura-pt, sans-serif;
+	font-family: var(--futura);
 	font-weight: 700;
 	font-style: normal;
-
-	color: #f8f3ec;
+	color: var(--current-month-title);
 }
-
-/* color: #f8f1e7; */
 
 .footer__link {
 	cursor: pointer;
 	padding: 2px 5px;
-	/* border-bottom: 1px solid #fff; */
 }
 
 .footer__link:hover {
-	color: #fa798f;
+	color: var(--white);
 }
 
 .github-corner:focus svg path {
