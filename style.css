@@ -1,40 +1,6 @@
 @import url("https://use.typekit.net/eia7dfc.css");
 @import url("https://fonts.googleapis.com/css2?family=Bellota:wght@700&family=Bree+Serif&family=Courier+Prime:wght@400;700&family=Cutive&family=Sanchez&display=swap");
 
-/* font-family: futura-pt, sans-serif;
-font-weight: 600;
-font-style: normal; */
-
-/* font-family: "HelveticaNeue-Light", Helvetica Neue, Helvetica; */
-
-/* font-family: futura-pt, sans-serif;
-font-weight: 800;
-font-style: normal; */
-
-/* font-family: futura-pt, sans-serif;
-font-weight: 700;
-font-style: normal; */
-
-/* font-family: "Bellota", cursive;
-700
-
-font-family: "Bree Serif", serif;
-400
-
-font-family: "Courier Prime", monospace;
-regular 400
-bold 700
-
-font-family: "Cutive", serif;
-400
-
-font-family: "Sanchez", serif;
-400 */
-
-/* font-family: "HelveticaNeue-Light", Helvetica Neue, Helvetica; */
-
-/* font-family: "Avenir", sans-serif; */
-
 :root {
 	--white: #fff;
 	--black: #000;
@@ -44,28 +10,44 @@ font-family: "Sanchez", serif;
 	--image: url("https://res.cloudinary.com/dn1e07eul/image/upload/v1614897774/100%20Days%20Of%20Code/gbudapest_cnwup2.jpg")
 		no-repeat center center/cover;
 	--futura: futura-pt, sans-serif;
+	--avenir: "Avenir", sans-serif;
 	--calendar-background-color: #f7bec6;
-	/* --day-number-color: #f8f3ec; */
-	--day-number-color: #90506f;
 	--calendar-shadow: inset rgba(85, 50, 50, 0.75) -1px -2px 2px, inset rgba(255, 255, 255) 3px 3px 3px,
 		rgba(99, 54, 54, 0.75) 2px 2px 3px -1px;
 	--day-background-color: rgba(255, 255, 255, 1);
 	--day-shadow: 10px 12px 10px rgba(2, 2, 2, 0.16);
 	--day-content-color: #222;
 	--event-banner-color: #f7dde159;
-	--event-banner-text: rgb(137, 137, 137);
+	--event-banner-text: rgb(97, 97, 97);
 	--pink-event-box: #fdafbc;
 	--event-label-color: #70484f;
-	--placeholder: rgba(255, 255, 255, 0.7);
+	--placeholder: rgba(255, 255, 255, 0.76);
 	--close-color: rgb(95, 95, 95);
+	/* --day-number-color: #f8f3ec; */
+	--day-number-color: #90506f;
 	/* --current-month-title: #f8f3ec; */
-	--current-month-title: #744b60;
+	--current-month-title: #492e3c;
 	/* --day-header-color: #fa798f; */
-	--day-header-color: var(--current-month-title);
+	--day-header-color: #85566e;
 	/* --prev-next-color: #e0919ed8; */
 	--prev-next-color: #8d515b;
 	/* --current-day-color: #fa798f; */
 	--current-day-color: #291316;
+	/* --day-view-title: #fdafbc; */
+	--day-view-title: #e96077;
+	/* --quote-color: #fcced6; */
+	--quote-color: var(--day-view-title);
+	--save-background: #fff0f0;
+	--save-color: #93656c;
+	--save-shadow: 2px 2px 4px rgba(2, 2, 2, 0.725);
+	--cancel-color: #f5565b;
+	--add-event-color: #f8879a;
+	--event-small: #444;
+	--event-title: rgb(83, 83, 83);
+	--delete-color: #f25656;
+	--event-banner-background: #f7f7f7;
+	--has-events-hover: rgba(255, 255, 255, 0.95);
+	--date-hover: rgba(255, 255, 255, 0.454);
 }
 
 body {
@@ -171,6 +153,7 @@ body {
 	transform: translateY(-205px);
 	opacity: 0;
 }
+
 .day-add-event[data-active="true"] {
 	display: block;
 	animation: popIn 250ms 1 forwards;
@@ -179,13 +162,13 @@ body {
 /* Event Name, Start Time, End Time */
 .add-event-label {
 	padding: 10px 0;
-
-	font-family: "Avenir", sans-serif;
+	font-family: var(--avenir);
 	color: var(--white);
 	font-weight: 500;
 	font-size: 12px;
 	color: var(--event-label-color);
 }
+
 .add-event-edit {
 	display: block;
 	margin: 4px 0;
@@ -195,6 +178,7 @@ body {
 	font-weight: 800;
 	color: var(--white);
 }
+
 .add-event-edit--long {
 	max-width: 80%;
 }
@@ -210,11 +194,13 @@ input.add-event-edit {
 	font-size: 16px;
 	font-weight: 800;
 }
+
 .add-event-edit--error,
 input.add-event-edit--error {
 	border-color: #ee666b;
 	animation: shake 300ms 1 forwards;
 }
+
 @keyframes shake {
 	20%,
 	60% {
@@ -226,11 +212,20 @@ input.add-event-edit--error {
 	}
 }
 
-input.add-event-edit:-moz-placeholder,
-input.add-event-edit::-moz-placeholder,
-input.add-event-edit:-ms-input-placeholder,
 input.add-event-edit::-webkit-input-placeholder {
-	color: rgba(255, 255, 255, 0.7);
+	color: var(--placeholder);
+}
+
+input.add-event-edit::-moz-input-placeholder {
+	color: var(--placeholder);
+}
+
+input.add-event-edit::-ms-input-placeholder {
+	color: var(--placeholder);
+}
+
+input.add-event-edit::placeholder {
+	color: var(--placeholder);
 }
 
 /* Save and Cancel buttons */
@@ -245,29 +240,28 @@ input.add-event-edit::-webkit-input-placeholder {
 }
 
 .event-btn--save {
-	background: #fff0f0;
-	color: #af7982;
+	background: var(--save-background);
+	color: var(--save-color);
 	border-radius: 5px;
 	border-color: transparent;
 	outline: none;
 }
 .event-btn--save:hover {
-	box-shadow: 2px 2px 6px rgba(2, 2, 2, 0.2);
+	box-shadow: var(--save-shadow);
 }
 .event-btn--cancel {
-	background: #eb6f73;
+	background: var(--cancel-color);
 	border-radius: 5px;
 	color: var(--white);
 	border-color: transparent;
 	outline: none;
 }
 .event-btn--cancel:hover {
-	box-shadow: 2px 2px 6px rgba(2, 2, 2, 0.2);
+	box-shadow: var(--save-shadow);
 }
 
 /* Add a new event? */
 .day-highlight .day-events-link {
-	/* border-bottom: 2px solid #222; */
 	padding: 0;
 	cursor: pointer;
 	letter-spacing: 0.75px;
@@ -275,14 +269,12 @@ input.add-event-edit::-webkit-input-placeholder {
 }
 
 #add-event {
-	color: #f8879a;
-	border-color: #f8879a;
+	color: var(--day-view-title);
 	outline: none;
 }
 
 #add-event:hover {
-	color: #8d7a8b;
-	border-color: #04b6e2;
+	color: var(--black);
 	outline: none;
 }
 
@@ -293,8 +285,8 @@ input.add-event-edit::-webkit-input-placeholder {
 	line-height: 1em;
 	right: 22px;
 	font-size: 24px;
-	color: rgb(95, 95, 95);
-	font-family: "Avenir", sans-serif;
+	color: var(--close-color);
+	font-family: var(--avenir);
 	font-weight: 800;
 	cursor: pointer;
 	opacity: 0;
@@ -311,28 +303,25 @@ input.add-event-edit::-webkit-input-placeholder {
 	text-align: right;
 	font-size: 1.5em;
 	letter-spacing: 1px;
-	font-family: "Avenir", sans-serif;
+	font-family: var(--avenir);
 	font-weight: 800;
-	color: #fdafbc;
-	/* border-bottom: 2px solid #222; */
+	color: var(--day-view-title);
 	cursor: pointer;
 }
+
 .day-inspiration-quote {
 	position: absolute;
-
 	left: 10%;
 	width: 80%;
 	margin-top: -40px;
 	height: calc(100% - 110px);
-
 	display: flex;
 	flex-wrap: nowrap;
 	align-items: center;
 	font-size: 1.75em;
-
 	font-weight: 800;
 	letter-spacing: 0.25px;
-	color: #fcced6;
+	color: var(--quote-color);
 	line-height: 1.5em;
 	font-family: var(--futura);
 	font-weight: 600;
@@ -348,20 +337,20 @@ input.add-event-edit::-webkit-input-placeholder {
 	max-height: 300px;
 	overflow: auto;
 }
+
 .day-event-list-ul li {
 	padding: 10px;
 	margin: 10px 0;
-	/* background: #04b6e2; */
-	/*   box-shadow: 0px 1px 1px  rgba(2,2,2,0.5); */
 	position: relative;
 }
+
 .event-dates small {
 	font-size: 0.65em;
-	color: #444;
+	color: var(--event-small);
 }
 
 #calendar-month {
-	color: #744b60;
+	color: var(--current-month-title);
 }
 
 #calendar-month:hover {
@@ -373,7 +362,7 @@ input.add-event-edit::-webkit-input-placeholder {
 	font-family: var(--futura);
 	font-weight: 600;
 	font-style: normal;
-	color: #fc8d9b;
+	color: var(--day-view-title);
 	font-size: 22px;
 	text-transform: lowercase;
 }
@@ -384,27 +373,30 @@ input.add-event-edit::-webkit-input-placeholder {
 	top: 18px;
 	font-size: 14px;
 	letter-spacing: 0.75px;
-	color: #f25656;
+	color: var(--delete-color);
 	cursor: pointer;
 	text-transform: uppercase;
 }
+
 .event-name {
 	font-size: 22px;
-	font-family: "Avenir", sans-serif;
-	color: rgb(83, 83, 83);
+	font-family: var(--avenir);
+	color: var(--event-title);
 	padding: 10px;
 	letter-spacing: 0.75px;
-	background: #f7f7f7;
+	background: var(--event-banner-background);
 	margin: 2px 0;
 	display: block;
 	text-transform: initial;
 }
+
 .calendar--day-view-active {
 	animation: popIn 200ms 1 forwards;
 	visibility: visible;
 	display: flex;
 	transition: visibility 0ms;
 }
+
 .calendar--view {
 	display: flex;
 	flex-wrap: wrap;
@@ -412,14 +404,15 @@ input.add-event-edit::-webkit-input-placeholder {
 	justify-content: flex-start;
 	width: 100%;
 }
+
 .cview__month {
 	width: 100%;
 	text-align: center;
 	font-weight: 800;
 	font-size: 22px;
-	font-family: "Avenir", sans-serif;
+	font-family: var(--avenir);
 	padding-bottom: 20px;
-	color: #222;
+	color: var(--day-content-color);
 	text-transform: uppercase;
 	display: flex;
 	flex-wrap: nowrap;
@@ -459,9 +452,11 @@ input.add-event-edit::-webkit-input-placeholder {
 	opacity: 0;
 	position: relative;
 }
+
 .cview__month-reset {
 	animation: none;
 }
+
 .cview__month-activate {
 	animation: popIn 500ms 1 forwards;
 }
@@ -474,7 +469,6 @@ input.add-event-edit::-webkit-input-placeholder {
 .cview--date {
 	width: 14.28571428571429%;
 	max-width: 14.28571428571429%;
-
 	padding: 18px;
 	box-sizing: border-box;
 	position: relative;
@@ -514,10 +508,11 @@ input.add-event-edit::-webkit-input-placeholder {
 	font-weight: 400;
 	cursor: pointer;
 }
+
 .has-events::after {
 	border-radius: 100%;
 	animation: popIn 200ms 1 forwards;
-	background: rgba(255, 255, 255, 0.95);
+	background: var(--has-events-hover);
 	transform: scale(0);
 	content: "";
 	display: block;
@@ -528,7 +523,7 @@ input.add-event-edit::-webkit-input-placeholder {
 	left: 30%;
 }
 .cview--date:hover {
-	background: rgba(255, 255, 255, 0.454);
+	background: var(--date-hover);
 }
 
 /* current day / current date */
@@ -546,6 +541,7 @@ input.add-event-edit::-webkit-input-placeholder {
 		opacity: 1;
 	}
 }
+
 .cview--date::before {
 	width: 100%;
 	height: 100%;
@@ -627,10 +623,6 @@ input.add-event-edit::-webkit-input-placeholder {
 /* @media screen and (max-width: 1000px) */
 
 @media (max-width: 800px) {
-	/* .calendar {
-    margin: 15px;
-  } */
-
 	.row {
 		flex-wrap: nowrap;
 	}
@@ -643,7 +635,6 @@ input.add-event-edit::-webkit-input-placeholder {
 
 	.day-inspiration-quote {
 		font-size: 1em;
-		/* visibility: hidden !important; */
 	}
 
 	input.add-event-edit::-webkit-input-placeholder {
@@ -670,8 +661,6 @@ input.add-event-edit::-webkit-input-placeholder {
 
 	.event-btn {
 		padding: 3px 2px;
-		/* border: 3px solid #fff; */
-		/* color: #fff; */
 		cursor: pointer;
 		display: inline-block;
 		width: 65px;
@@ -691,7 +680,6 @@ input.add-event-edit::-webkit-input-placeholder {
 	.cview--date {
 		width: 14.28571428571429%;
 		max-width: 14.28571428571429%;
-
 		padding: 14px;
 		box-sizing: border-box;
 		position: relative;
@@ -708,7 +696,6 @@ input.add-event-edit::-webkit-input-placeholder {
 	.cview__header {
 		width: 14.28571428571429%;
 		max-width: 14.28571428571429%;
-
 		padding: 14px;
 		box-sizing: border-box;
 		position: relative;
