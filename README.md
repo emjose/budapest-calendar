@@ -29,6 +29,8 @@
 -   [Copyright](#copyright)
 -   [Let's Connect!](#lets-connect)
 
+<br>
+
 #
 
 <p id="100days"><p>
@@ -42,6 +44,10 @@
 -   The calendar is themed after one of my favorite films, <a href="https://www.searchlightpictures.com/thegrandbudapesthotel/">The Grand Budapest Hotel</a>.
 
 -   Events can be added, and it has <a href="https://www.imdb.com/title/tt2278388/characters/nm0000146">quotes from Monsieur Gustave</a>, portrayed by the actor <a href="https://www.imdb.com/name/nm0000146/">Ralph Fiennes</a>.
+
+-   **Update**: For great accessibility, the initial white and light pink text colors were changed to darker hues.
+
+<br>
 
 #
 
@@ -61,6 +67,8 @@ git clone git@github.com:emjose/budapest-calendar.git && cd budapest-calendar
 open index.html
 ```
 
+<br>
+
 #
 
 <p id="live-site"><p>
@@ -69,7 +77,11 @@ open index.html
 
 <a href="https://emjose.github.io/budapest-calendar/">![Live Site](Assets/023-budapest-a.gif)</a>
 
-Users can browse calendar dates and quotes from Ralph Fiennes' character, Monsieur Gustave.
+• The **[Calendar](https://emjose.github.io/budapest-calendar/)** is a [progressive web app](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps).
+
+• Users can browse calendar dates and quotes from Ralph Fiennes' character, Monsieur Gustave.
+
+• **Note**: The original white and light pink text colors have been changed to darker hues for greater accessibility.
 
 #
 
@@ -77,7 +89,11 @@ Users can browse calendar dates and quotes from Ralph Fiennes' character, Monsie
 
 <a href="https://emjose.github.io/budapest-calendar/">![Live Site](Assets/023-budapest-b.gif)</a>
 
-Events can be added and deleted.
+• Events can be added and deleted.
+
+• **Note**: The original white and light pink text colors have been changed to darker hues for greater accessibility.
+
+<br>
 
 #
 
@@ -86,7 +102,9 @@ Events can be added and deleted.
 <a href=#resources>![Resources](https://res.cloudinary.com/dn1e07eul/image/upload/v1659314247/Readme%20Headers/inter-resources_ncevbw.png)</a>
 
 -   #### [Calendar CodePen](https://codepen.io/ovdojoey/pen/GqRxYQ) by [Joey Lea](https://joeylea.com/)
+
 -   #### [The Grand Budapest Hotel](https://www.searchlightpictures.com/thegrandbudapesthotel/)
+
 -   #### [Image Color Picker](https://imagecolorpicker.com/en)
 
 -   #### [Monsieur Gustave Quotes](https://www.imdb.com/title/tt2278388/characters/nm0000146)
@@ -94,6 +112,8 @@ Events can be added and deleted.
 -   #### [The Grand Budapest Hotel image by WallpaperCave](https://wallpapercave.com/the-grand-budapest-hotel-wallpapers)
 
 -   #### [My blog on how I created my Github READMEs](https://emmanueljose.medium.com/readme-a-makeover-story-b9c7be37a6de?sk=7ae6623d365409d875753e4604e42ffd)
+
+<br>
 
 #
 
@@ -104,6 +124,8 @@ Events can be added and deleted.
 -   This project is for made for educational purposes only.
 
 -   The Grand Budapest images and characters are copyright of <a href="https://www.searchlightpictures.com/">Searchlight Pictures</a>. © 20th CENTURY STUDIOS. All Rights Reserved.
+
+<br>
 
 #
 
