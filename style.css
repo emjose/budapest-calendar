@@ -144,11 +144,6 @@ body {
 	width: 100%;
 }
 
-.half button {
-	width: 80px;
-	font-weight: 500;
-}
-
 /* "Pink Day Box" */
 .day-add-event {
 	background: var(--pink-event-box);
@@ -234,14 +229,17 @@ input.add-event-edit::placeholder {
 }
 
 /* Save and Cancel buttons */
+
 .event-btn {
-	padding: 3px 9px;
+	padding: 6px 12px;
 	color: var(--white);
 	cursor: pointer;
 	display: inline-block;
 	width: 65px;
 	margin: 15px 5px;
 	text-align: center;
+	width: 100px;
+	font-size: 16px;
 }
 
 .event-btn--save {
@@ -251,9 +249,16 @@ input.add-event-edit::placeholder {
 	border-color: transparent;
 	outline: none;
 }
+
+/* .half button {
+	width: 80px;
+	font-weight: 500;
+} */
+
 .event-btn--save:hover {
 	box-shadow: var(--save-shadow);
 }
+
 .event-btn--cancel {
 	background: var(--cancel-color);
 	border-radius: 5px;
@@ -261,6 +266,7 @@ input.add-event-edit::placeholder {
 	border-color: transparent;
 	outline: none;
 }
+
 .event-btn--cancel:hover {
 	box-shadow: var(--save-shadow);
 }
