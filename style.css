@@ -620,7 +620,7 @@ input.add-event-edit::placeholder {
 	}
 }
 
-@media (max-width: 500px) {
+@media (max-width: 906px) {
 	.github-corner {
 		display: none;
 	}
