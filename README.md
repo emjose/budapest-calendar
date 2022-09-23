@@ -45,7 +45,7 @@
 
 -   Events can be added, and it has <a href="https://www.imdb.com/title/tt2278388/characters/nm0000146">quotes from Monsieur Gustave</a>, portrayed by the actor <a href="https://www.imdb.com/name/nm0000146/">Ralph Fiennes</a>.
 
--   **Update**: For great accessibility, the initial white and light pink text colors were changed to darker hues.
+-   **September 2022 Update**: For accessibility, the light text colors were changed to darker hues.
 
 <br>
 
